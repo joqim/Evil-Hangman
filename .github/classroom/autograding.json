@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Default Constructor - 3pt",
+      "setup": "cmake .;make FamilySet_Tests",
+      "run": "timeout 5m ./FamilySet_Tests \"FamilySet Tests\" -c \"Default Constructor - 5pt\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 3
+    },
+    {
+      "name": "filterFamilies no pattern - 15pt",
+      "setup": "cmake .;make FamilySet_Tests",
+      "run": "timeout 5m ./FamilySet_Tests \"FamilySet Tests\" -c \"filterFamilies no pattern - 15pt\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 15
+    },
+    {
+      "name": "filterFamilies with pattern - 15pt",
+      "setup": "cmake .;make FamilySet_Tests",
+      "run": "timeout 5m ./FamilySet_Tests \"FamilySet Tests\" -c \"filterFamilies with pattern - 15pt\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 15
+    },
+    {
+      "name": "setFamily - 2pt",
+      "setup": "cmake .;make FamilySet_Tests",
+      "run": "timeout 5m ./FamilySet_Tests \"FamilySet Tests\" -c \"setFamily - 2pt\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 2
+    }
+  ]
+}
